@@ -76,7 +76,7 @@
         </sensor>
     </gazebo>
 
-    <!-- <joint name="ultrasonic1_joint" type="fixed">
+    <joint name="ultrasonic1_joint" type="fixed">
         <parent link="chassis"/>
         <child link="ultrasonic1_link"/>
         <origin xyz="${chassis_length+0.01} ${chassis_width/2-0.02} ${chassis_height/2}" rpy="0 0 0"/>
@@ -126,7 +126,7 @@
                 <topic>ultrasonic1/scan</topic>
                 <gz_frame_id>ultrasonic1_link</gz_frame_id>
         </sensor>
-    </gazebo> -->
+    </gazebo>
 
     <joint name="ultrasonic2_joint" type="fixed">
         <parent link="chassis"/>
@@ -180,7 +180,7 @@
         </sensor>
     </gazebo>
 
-    <!-- <joint name="ultrasonic3_joint" type="fixed">
+    <joint name="ultrasonic3_joint" type="fixed">
         <parent link="chassis"/>
         <child link="ultrasonic3_link"/>
         <origin xyz="${chassis_length-0.02} -${chassis_width/2+0.01} ${chassis_height/2}" rpy="0 0 -${pi/2}"/>
@@ -334,6 +334,6 @@
                 <topic>ultrasonic5/scan</topic>
                 <gz_frame_id>ultrasonic5_link</gz_frame_id>
         </sensor>
-    </gazebo> -->
+    </gazebo>
 
 </robot>
