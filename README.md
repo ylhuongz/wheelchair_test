@@ -62,7 +62,7 @@ Clone the repository into your ROS 2 workspace `src` directory and build:
 cd ~/ros2_ws/src
 
 # Clone the repository
-git clone https://github.com/ylhuongz/wheelchair_two.git
+git clone https://github.com/ylhuongz/wheelchair_test.git
 
 # Build the package
 cd ~/ros2_ws
@@ -79,7 +79,7 @@ Run the following commands in **separate terminal windows** (ensure `source inst
 ### 1. Launch Gazebo Simulation
 Starts the wheelchair model inside the Gazebo simulation environment:
 ```bash
-ros2 launch wheelchair_two launch_sim.launch.py
+ros2 launch wheelchair_two launch_sim.launch.py world:=./src/wheelchair_test/worlds/obstacle1.world
 ```
 **Note:** Once Gazebo is up and running, click on the 3-dot in the top right corner. Search and add "Visualize lidar" (click refresh, topic should be /scan) as well as "teleop" (for movement).
 
@@ -107,7 +107,7 @@ Use the "Add" button to add the following:
 ### 3. Launch SLAM (Mapping)
 Runs the online asynchronous SLAM node to build an occupancy grid map:
 ```bash
-ros2 launch slam_toolbox online_async_launch.py params_file:=./src/wheelchair_two/config/mapper_params_online_async.yaml use_sim_time:=true
+ros2 launch slam_toolbox online_async_launch.py slam_params_file:=./src/wheelchair_two/config/mapper_params_online_async.yaml use_sim_time:=true
 ```
 **Note:** Change *Fixed Frame* to "Map"
 Use the "Add" button to add Map (change *topic* to /map)
