@@ -79,6 +79,10 @@ Run the following commands in **separate terminal windows** (ensure `source inst
 ### 1. Launch Gazebo Simulation
 Starts the wheelchair model inside the Gazebo simulation environment:
 ```bash
+# Empty World
+ros2 launch wheelchair_two launch_sim.launch.py
+
+# Obstacle1 world
 ros2 launch wheelchair_two launch_sim.launch.py world:=./src/wheelchair_test/worlds/obstacle1.world
 ```
 **Note:** Once Gazebo is up and running, click on the 3-dot in the top right corner. Search and add "Visualize lidar" (click refresh, topic should be /scan) as well as "teleop" (for movement).
