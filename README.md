@@ -19,7 +19,9 @@ Built for **ROS 2 Jazzy Jalisco** and **Gazebo Harmonic** (`gz-sim`).
 ### SLAM & Autonomous Navigation
 | Mapping with SLAM Toolbox | Autonomous Navigation (Nav2) |
 | :---: | :---: |
-| <img src="docs/SLAM Mapping.gif" alt="SLAM Reference" width="100%"> | <img src="docs/NAV2.gif" alt="Nav2 Reference" width="100%"> |
+| <img src="docs/SLAM Mapping.gif" alt="SLAM Reference" width="100%"> | <img src="docs/NAV2.gif" alt="Nav2 Reference" width="72%"> |
+| **Ultrasonic Local Costmap** |
+| <img src="docs/Ultrasonic Local Costmap.gif" alt="SLAM Reference" width="100%"> |
 
 > **Note:** Video demo can be found in the [`docs/`](docs/) folder.
 
